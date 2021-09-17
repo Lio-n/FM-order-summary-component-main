@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-image: url("./images/pattern-background-mobile.svg");
+  font-family: "Red Hat Display", sans-serif;
+}
+@media (min-width: 375px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+}
+
+.card {
+  max-width: 28rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+/* <!--Card__image--> */
+.card__image {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+
+/* <!--Card__content--> */
+.card-container-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* <!--Card__descript--> */
+.card__title {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+.card__paragraph {
+  font-size: 18px;
+  line-height: 2rem;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1.5rem;
+}
+
+/* <!--Card__plan--> */
+.card-container-plan {
+  background-color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.card-container-plan > a {
+  color: hsl(245, 75%, 52%);
+}
+.card-container-plan > a:hover {
+  color: hsl(224, 23%, 55%);
+}
+.card__label > span {
+  color: hsl(224, 23%, 55%);
+}
+
+/* <!--Card__payment--> */
+.card-container-payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__btn-payment {
+  cursor: pointer;
+  height: 3.5rem;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 25px 25px hsl(225, 100%, 94%);
+}
+.card__btn-payment:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.card__cancel-payment {
+  font-size: 18px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.card__cancel-payment:hover {
+  color: #000;
+}
