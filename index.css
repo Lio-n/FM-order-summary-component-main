@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  padding: 5rem 1.5rem;
+  padding: 6.25rem 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,22 +14,23 @@ body {
   background-image: url("./images/pattern-background-mobile.svg");
   font-family: "Red Hat Display", sans-serif;
 }
-@media (min-width: 375px) {
+@media (min-width: 500px) {
   body {
     background-image: url("./images/pattern-background-desktop.svg");
   }
 }
 
 .card {
-  max-width: 28rem;
+  box-shadow: 0 2.5rem 3.5rem -1.5rem rgb(55 42 224 / 20%);
+  max-width: 450px;
   width: 100%;
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
 }
 
 /* <!--Card__image--> */
 .card__image {
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1.25rem 1.25rem 0 0;
   width: 100%;
 }
 
@@ -38,34 +39,55 @@ body {
   padding: 2rem;
   text-align: center;
 }
-
+@media (min-width: 500px) {
+  .card-container-content {
+    padding: 2.5rem 3rem;
+  }
+}
 /* <!--Card__descript--> */
 .card__title {
-  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
   font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 .card__paragraph {
-  font-size: 18px;
   line-height: 2rem;
   color: hsl(224, 23%, 55%);
   margin-bottom: 1.5rem;
 }
-
+@media (min-width: 500px) {
+  .card__paragraph {
+    line-height: 1.5rem;
+  }
+}
 /* <!--Card__plan--> */
 .card-container-plan {
   background-color: hsl(225, 100%, 98%);
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
-.card-container-plan > a {
+.card__cont-price {
+  display: flex;
+}
+
+.card__change > a {
   color: hsl(245, 75%, 52%);
 }
-.card-container-plan > a:hover {
+.card__change > a:hover {
   color: hsl(224, 23%, 55%);
+}
+.card__label {
+  padding-left: 20px;
+}
+.card__label > p {
+  margin-bottom: 5px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 .card__label > span {
   color: hsl(224, 23%, 55%);
@@ -79,22 +101,22 @@ body {
 
 .card__btn-payment {
   cursor: pointer;
-  height: 3.5rem;
+  height: 50px;
   border: none;
   color: #fff;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1rem;
   background-color: hsl(245, 75%, 52%);
-  border-radius: 1rem;
+  border-radius: 10px;
   margin-bottom: 2rem;
-  box-shadow: 0px 25px 25px hsl(225, 100%, 94%);
+  box-shadow: 0px 1rem 1rem rgb(55 42 224 / 20%);
 }
 .card__btn-payment:hover {
   background-color: hsl(224, 23%, 55%);
 }
 
 .card__cancel-payment {
-  font-size: 18px;
+  font-size: 1rem;
   text-decoration: none;
   color: hsl(224, 23%, 55%);
   font-weight: 700;
