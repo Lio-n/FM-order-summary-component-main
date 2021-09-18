@@ -82,9 +82,11 @@ body {
   color: hsl(224, 23%, 55%);
 }
 .card__label {
+  width: 112px;
   padding-left: 20px;
 }
-.card__label > p {
+.card__label > .card__text-plan {
+  display: block;
   margin-bottom: 5px;
   font-weight: 900;
   color: hsl(223, 47%, 23%);
